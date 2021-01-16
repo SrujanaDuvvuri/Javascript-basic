@@ -1,0 +1,161 @@
+Javascript (makes webpage dynamic)
+---------------
+Javascript is a programming language allows us to implement complex features on webpages.
+
+HTML - is the markup language that we use to structure and five meaning to our webcontent
+CSS - is a language of style rules that we used to apply styling to our HTML content
+Javascript - is a scripting language that enables us to create dynamically updating the content
+
+Syntax parser
+----------------
+A program that reads our code and determines what exactly it does and if its grammer is valid
+
+inbuilt - engines
+------------------
+Chrome has inbuilt V8 browser to compile Javascript code
+Spidermonkey for mozilla
+javascriptcore is Apple's engine for safari
+chakra for IE
+
+Lexical environment
+------------------
+Where something sits physically in the code we write
+
+execution content
+-------------------
+A wrapper to help manage the code that is running
+
+Name-value pair
+------------------
+a name which maps to a unique values
+
+user: "Srujana"
+
+Object
+---------
+A collection of name value pairs
+
+Execution context (global)
+---------------------------
+global Object
+this (variable)
+
+this - window (the browser window)
+Global Object - window
+
+Global - which is not inside the function
+local - means inside the function
+
+//Global
+var a = "Hello world"
+
+function b(){ 
+//local
+}
+
+Hoisting 
+---------
+when you declare variables and functions in javascript, the engine sets up 
+memory space for variables and functions
+
+
+if it is a variable it will keep that variable in memory and assign a value called undefined.
+if it is a function it will copy entire function and keeps it in memory.
+
+Javascript is single threaded and synchronous execution -  takes one thing at a time
+
+Single threaded
+---------------------
+One at a time
+
+Synchronous -- one at a time
+ASynchronous -- multiple things at a time
+
+
+Synchronous -- one at a time
+-------------------
+1. get the data from database
+2. get the file from network location
+3. update the file with data from database
+
+ASynchronous
+--------------------
+1. get the data from database
+1. get the file from network location
+2. update the file with data from database
+
+Scope --  where a variable is available in your code
+
+dynamic typing
+--------------
+we don't have to tell the engine what types of data a variable holds
+it figures out while your code is running. 
+
+Static typing
+----------------
+We need to explicitly mention that data type to engine
+
+Primitive types
+----------------
+A type of data that represents a single value.
+
+1. number -- all number types like int , float etc.,
+2. string -- ( we can use both '' and "" )
+3. boolean -- true or false
+4. undefined -- represents lack of existence ( never set a variable to undefined)
+5. null -- represents lack of existence( we can set null to a variable)
+6. symbol(from Javascript6) -- Used in ES6
+
+functions
+-------------
+1. Named function or regular functions
+2. Anonymous function
+3. Immediately invoked functions
+
+
+Objects
+--------
+collection of name value pairs
+
+JSON
+-----
+Javascript object notation - inspired by Object literal notation.
+
+properties have to wrapped in quotes for JSON
+anything valid in JSON is valid in object literal
+
+common usage of JSON is to exchange data to/from web servers
+when sending data to a webserver that data has to be string.
+
+JSON Stringify -- Converts a JSON object to string
+        Converts a javascript value to be serialized 
+JSON parse -- Converts a string to JSON object.
+        deserialises a JSON representation to javascript 
+Arrays
+---------
+An Array is an object hat can store a collection of items
+
+Useful when you want to store large amount of data
+
+
+Callback functions
+------------------
+Functions being passed as a parameter to another parameter
+
+
+Call, bind, apply
+--------------------
+bind - creates a copy of that function and sets 'this' keyword.
+
+call - sets 'this' keyword and executes the function Immediately and it doesnt 
+        create a new copy of the functions
+
+apply -- it is similar to call, the difference is that apply methods accepts 
+        an array of arguments instead of comma separate values
+
+The call, bind, apply methods can be used to set 'this' keyword
+independant of how functions is called.
+
+
+
+
